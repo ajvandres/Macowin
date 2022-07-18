@@ -1,7 +1,5 @@
 package Macowin;
 
-import Macowin.EstadoPrenda.EstadoPrenda;
-
 public class Prenda {
 	TipoPrenda tipoPrenda;
 	double precio;

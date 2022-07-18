@@ -1,4 +1,4 @@
-package Macowin.EstadoPrenda;
+package Macowin;
 
 public class Promocion implements EstadoPrenda {
 	

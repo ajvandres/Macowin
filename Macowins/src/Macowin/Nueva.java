@@ -1,4 +1,4 @@
-package Macowin.EstadoPrenda;
+package Macowin;
 
 public class Nueva implements EstadoPrenda {
 	public double modificacionPrecio(double precio) {
