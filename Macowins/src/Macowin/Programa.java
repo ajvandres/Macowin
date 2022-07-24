@@ -1,26 +1,12 @@
 package Macowin;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.Assertions;
 
-public class Testeo {
-
-  @Test
-  public void ventaPantalon() {
-    Prenda pantalon = new Prenda(TipoPrenda.PANTALONES, 57, new Nueva() );
-    Item pantalones = new Item(pantalon, 3);
-    ArrayList<Item> items = new ArrayList<>();
-    items.add(pantalones);
-    Venta venta = new Venta(items, 20220718);
-    Assertions.assertEquals(171, venta.totalVenta());
-  }
-
-
-	@Test
-	public void venta20220105() {
+public class Programa {
+	 public static void main(String args[])
+	    {
 		  Prenda saco = new Prenda(TipoPrenda.SACOS, 39, new Nueva() );
 		  ArrayList<Item> items1 = new ArrayList<>();
 		  Item sacos = new Item(saco, 2);
@@ -46,9 +32,18 @@ public class Testeo {
 		  negocio.agregarVenta(venta1);
 		  negocio.agregarVenta(venta2);
 		  negocio.agregarVenta(venta3);
-	  
-	  Assertions.assertEquals(735.62, negocio.getVentasFecha(20220105));
-	  Assertions.assertEquals(1624.35, Math.round(negocio.getVentasFecha(20220106) * 100.0) / 100.0);
-	}
-
+		  
+		  //Assertions.assertEquals(657.52, negocio.getVentasFecha(20220105));   
+		 
+		  System.out.println(saco.getPrecio());
+		  System.out.println(pantalon.getPrecio());
+		  System.out.println(camisa.getPrecio());
+		  System.out.println(venta1.totalVenta());
+		  System.out.println(pantalones.importe());
+		  System.out.println(camisas.importe());
+		  System.out.println(venta2.totalVenta());
+		  System.out.println(negocio.getVentasFecha(20220105));
+		  
+		  System.out.println(Math.round(negocio.getVentasFecha(20220106) * 100.0) / 100.0);
+	    }
 }

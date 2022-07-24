@@ -13,9 +13,12 @@ public class Prenda {
 	
 	TipoPrenda getTipoPrenda() {
 		return tipoPrenda;
-	}	
-	double calcularPrecio() {
-		return this.estadoPrenda.modificacionPrecio(this.precio);
+	}
+	EstadoPrenda getEstadoPrenda() {
+		return this.estadoPrenda;
+	}
+	double getPrecio() {
+		return estadoPrenda.modificacionPrecio(this.precio);
 	}
 	
 	

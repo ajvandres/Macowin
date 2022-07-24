@@ -3,11 +3,11 @@ package Macowin;
 import java.util.ArrayList;
 
 public class Venta {
-	ArrayList<Prenda> prendas;
+	ArrayList<Item> items;
 	int fecha;
 	
-	Venta(ArrayList<Prenda> prendas, int fecha) {
-		this.prendas = prendas;
+	Venta(ArrayList<Item> items, int fecha) {
+		this.items = items;
 		this.fecha = fecha;
 	}
 	
@@ -15,7 +15,7 @@ public class Venta {
 		return this.fecha;
 	}	
 	double totalVenta() {
-		return prendas.stream().mapToDouble(prenda -> prenda.calcularPrecio()).sum();
+		return items.stream().mapToDouble(prenda -> prenda.importe()).sum();
 	}
 	
 }
